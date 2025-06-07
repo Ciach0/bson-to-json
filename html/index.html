@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>BSON to JSON mass-converter</title>
+  </head>
+  <body class="content">
+    <h2>BSON to JSON mass-converter</h2>
+    <p>Selected file(s):</p>
+    <span id="name">None</span>
+    <p>Output folder:</p>
+    <span id="output">None</span>
+    <div class="buttons">
+        <button id="select_file" class="button">Select files</button>
+        <button id="select_output" class="button">Select output folder</button>
+        <div class="progress invisible" id="progress_div">
+          <progress id="progress" value="35" max="100"></progress>
+          <p id="progress_text">0/0 (0%)</p>
+        </div>
+        <button id="convert" class="button convert disabled" disabled>Convert</button>
+    </div>
+    <br />
+    <p class="credits">Created with ❤️ and ☕ by <a href="https://ciach795.com" target="_blank" class="link">ciach0_</a></p>
+    <p class="credits">Links:
+      <a href="https://github.com/Ciach0" target="_blank" class="link">GitHub</a>,
+      <a href="https://ko-fi.com/ciach0_" target="_blank" class="link">Donate</a>
+    </p>
+    <p class="credits">Open-sourced under GPL-3.0 license: <a href="https://github.com/Ciach0/bson-to-json" target="_blank" class="link">Contribute!</a></p>
+    <p class="credits">If you have a Discord server, <a href="https://github.com/Ciach0/bson-to-json" target="_blank" class="link">StartIT</a> might be a bot for you!</p>
+    <script src="index.js"></script>
+  </body>
+</html>

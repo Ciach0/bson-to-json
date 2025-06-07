@@ -1,0 +1,35 @@
+{
+  "name": "bsonconvert",
+  "version": "1.0.0",
+  "description": "A tool that mass-converts BSON documents into human-readable JSON files.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "app:dir": "electron-builder --dir",
+    "app:dist": "electron-builder"
+  },
+  "author": "ciach0_",
+  "license": "LGPL-3.0-or-later",
+  "build": {
+    "appId": "ciach0.bson-mass-converter",
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "win": {
+      "target": "portable",
+      "appId": "ciach0.bson-mass-converter",
+      "executableName": "BSON to JSON mass-converter",
+      "icon": "build/icon.ico"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "devDependencies": {
+    "electron": "^36.1.0",
+    "electron-builder": "^26.0.12"
+  },
+  "dependencies": {
+    "bson": "^6.10.4"
+  }
+}

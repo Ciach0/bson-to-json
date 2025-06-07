@@ -1,0 +1,97 @@
+.content {
+    background: #1a1818;
+    color: white;
+    font-family: Noto Sans, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+p {
+    margin: 0;
+    padding: 5px;
+}
+
+.input-select {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.button {
+    background: none;
+    /*border: none;*/
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    border: 1px solid rgb(58, 58, 58);
+    background: rgb(41, 41, 41);
+    border-radius: 8px;
+    transition: all .2s ease;
+    width: 100%;
+}
+
+.button:not(.disabled):hover {
+    background: rgb(58, 58, 58);
+    border: 1px solid rgb(77, 77, 77);
+}
+
+.convert {
+    border: 1px solid rgb(62, 156, 38);
+    background: rgb(48, 131, 27);
+    margin-top: 10px;
+}
+
+.convert:not(.disabled):hover {
+    background: rgba(77, 209, 44, 0.8);
+    border: 1px solid rgba(68, 194, 36, 0.8);
+}
+
+.convert.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.progress {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+    gap: 6px;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+#name, #output {
+    margin: 10px;
+    padding: 4px;
+    border: 1px solid rgb(58, 58, 58);
+    background: rgb(41, 41, 41);
+    border-radius: 8px;
+    text-align: center;
+    transition: all .2s ease;
+}
+
+#name.active, #output.active {
+    background: rgb(48, 131, 27);
+    border: 1px solid rgb(83, 166, 75);
+}
+
+.link {
+    color: #fff;
+}
+
+.credits {
+    color: #a6a6a6;
+    font-weight: bolder;
+}
