@@ -1,7 +1,7 @@
 {
   "name": "bsonconvert",
   "version": "1.0.0",
-  "description": "A tool that mass-converts BSON documents into human-readable JSON files.",
+  "description": "A simple tool that mass-converts BSON documents into human-readable JSON files.",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
